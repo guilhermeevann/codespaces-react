@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <h1>Teste React</h1>
       <FirstComp></FirstComp>
+      <h2>teste</h2>
     </div>
   );
 }
