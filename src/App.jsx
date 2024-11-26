@@ -8,6 +8,7 @@ import app from './firebase.ts';
 //Componentes 
 import FirstComp from './components/FirstComp.jsx';
 import Login from './components/Login';
+import Cadastro from './components/Cadastro';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <FirstComp></FirstComp>
       <Login></Login>
+      <Cadastro></Cadastro>
     </div>
   );
 }

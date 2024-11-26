@@ -1,30 +1,30 @@
 import React from "react";
 import { useState } from "react";
 
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
 function Login(){
 
-    const [email ,setEmail] = useState('')
-    const [senha ,setSenha] = useState('')
+    const [emailLogin ,setEmailLogin] = useState('')
+    const [senhaLogin ,setSenhaLogin] = useState('')
 
-    const enviaForm = async (e) => {
+    const enviaForm =  (e) => {
         e.preventDefault();
 
         const auth = getAuth();
-        signInWithEmailAndPassword(auth, email, senha).then(
-        ( userCredential ) => {
-        const user = userCredential.user;
-        console.log ( user ) ;
-        });
+        signInWithEmailAndPassword(auth, emailLogin, senhaLogin).then((userCredential) => {
+            // Signed up 
+            const user = userCredential.user;
+            // ...
+          });
     }
 
     return(
         <form onSubmit={enviaForm}>
             <div>
-                <input type="text"  placeholder="digite seu email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                <input type="text" placeholder= "digite sua senha" value={senha} onChange={(e) => setSenha(e.target.value)}/>
-                <input type="submit" />
+                <input type="text"  placeholder="digite seu email" value={emailLogin} onChange={(e) => setEmailLogin(e.target.value)}/>
+                <input type="text" placeholder= "digite sua senha" value={senhaLogin} onChange={(e) => setSenhaLogin(e.target.value)}/>
+                <input type="submit" value="Login"/>
             </div>
         </form>
 
