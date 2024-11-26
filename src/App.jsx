@@ -3,20 +3,19 @@ import './App.css';
 //Firebase
 import firebaseConfig from './firebase.ts'
 import { initializeApp } from "firebase/app";
+import app from './firebase.ts';
 
 //Componentes 
 import FirstComp from './components/FirstComp.jsx';
+import Login from './components/Login';
 
 
 function App() {
 
-  const app = initializeApp(firebaseConfig);
-
   return (
     <div className="App">
-      <h1>Teste React</h1>
       <FirstComp></FirstComp>
-      <h2>teste</h2>
+      <Login></Login>
     </div>
   );
 }
