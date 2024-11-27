@@ -4,7 +4,12 @@
     transition: 5s;
 
 }
-.container-test:hover{
-    background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(124, 120, 120), rgb(136, 255, 0));
-    color: aliceblue;
+
+@media(min-width: 850px){
+    .container-test{
+        background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(124, 120, 120), rgb(136, 255, 0));
+        color: aliceblue;
+    }
+    
+    
 }
