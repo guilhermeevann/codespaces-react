@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="App">
       <FirstComp></FirstComp>
-      <Login></Login>
       <Cadastro></Cadastro>
+      <Login></Login>
     </div>
   );
 }

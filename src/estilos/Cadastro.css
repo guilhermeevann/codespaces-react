@@ -1,0 +1,29 @@
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.container-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(216, 192, 239);
+    width: 50%;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.container-cadastro input{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.container-cadastro input[type = "submit"]{
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(87, 255, 179);
+}
